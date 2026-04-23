@@ -22,7 +22,7 @@ export const NOTARY_DATA = {
     full: "Французький бульвар, 66/1, офіс 103В, м. Одеса, 65062",
     short: "Французький бульвар, 66/1, офіс 103В",
     city: "м. Одеса, 65062",
-    mapsUrl: "https://maps.app.goo.gl/qfM5SfRVTkHYfqJv5",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%8C%D0%BA%D0%B8%D0%B9+%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80,+66/1,+%D0%BE%D1%84%D1%96%D1%81+103%D0%92,+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0",
   },
   schedule: {
     weekdays: "10:00 – 17:00",

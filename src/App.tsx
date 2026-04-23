@@ -242,16 +242,6 @@ export default function App() {
               <span className="italic font-normal opacity-90">в Одесі</span>
             </motion.h1>
 
-            <motion.p 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="font-sans font-light text-lg md:text-xl text-white/70 mb-10 max-w-[560px] leading-relaxed"
-            >
-              Бєльтюкова Євгенія Михайлівна — ваш надійний правовий партнер. 
-              Професійне посвідчення угод, оформлення спадщини та реєстрація бізнесу.
-            </motion.p>
-
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -392,15 +382,13 @@ export default function App() {
           </Reveal>
 
           <Reveal className="order-1 lg:order-2">
-            <div className="aspect-square bg-bg border border-border p-3 rounded-[2px] relative group">
+            <div className="aspect-square bg-bg border border-border p-3 rounded-[2px] relative group flex items-center justify-center">
               <div className="absolute top-0 right-0 w-24 h-24 bg-gold/10 -m-4 -z-10 group-hover:m-0 transition-all duration-700"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gold/10 -m-4 -z-10 group-hover:m-0 transition-all duration-700"></div>
               <div className="w-full h-full bg-dark flex items-center justify-center relative overflow-hidden">
                 <span className="text-gold opacity-[0.05] text-[200px] font-serif absolute -bottom-10 -right-10">⚖</span>
                 <div className="text-center p-12">
-                   <p className="font-serif text-white text-3xl mb-4 italic opacity-80">«Закон — це не лише слова, а впевненість у завтрашньому дні»</p>
-                   <div className="w-10 h-0.5 bg-gold mx-auto mb-4"></div>
-                   <p className="text-gold text-[10px] uppercase tracking-widest">Бєльтюкова Є.М.</p>
+                   <p className="font-serif text-white text-3xl italic opacity-80">«Закон — це не лише слова, а впевненість у завтрашньому дні»</p>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ export const NOTARY_DATA = {
   instagram: "@notary_byeltyukova",
   instagramUrl: "https://www.instagram.com/notary_byeltyukova",
   address: {
-    full: "65062, м. Одеса, Французький бульвар, 66/1, офіс 103В",
+    full: "Французький бульвар, 66/1, офіс 103В, м. Одеса, 65062",
     short: "Французький бульвар, 66/1, офіс 103В",
     city: "м. Одеса, 65062",
     mapsUrl: "https://maps.app.goo.gl/qfM5SfRVTkHYfqJv5",

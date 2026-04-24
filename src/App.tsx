@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { 
   Phone, 
@@ -26,7 +26,13 @@ import { NOTARY_DATA, SERVICES } from "./constants";
 
 // --- Components ---
 
-const Reveal = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
+interface RevealProps {
+  children: React.ReactNode;
+  className?: string;
+  key?: React.Key;
+}
+
+const Reveal = ({ children, className = "" }: RevealProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -363,7 +369,7 @@ export default function App() {
             <h2 className="text-dark text-4xl md:text-6xl font-bold mb-8 font-serif">Бєльтюкова <br /> Євгенія Михайлівна</h2>
             <div className="w-16 h-1 bg-gold mb-12"></div>
             <p className="text-muted text-lg font-light leading-relaxed mb-8">
-              Маючи понад 17 років професійної практики, я забезпечую високий стандарт нотаріального обслуговування. Моя мета — не просто засвідчити документ, а стати вашим надійним правовим провідником.
+              Понад 17 років у професії я прагну не лише оформити документи, а й зробити право зрозумілим — пояснюю складні речі простою мовою
             </p>
             <div className="grid sm:grid-cols-2 gap-4 mb-12">
               {["Досвід з 2007 року", "Округ: Одеський міський", "Свідоцтво: № 6248", "Прийом без черг"].map((item, i) => (
@@ -403,7 +409,7 @@ export default function App() {
             <Reveal>
               <h2 className="text-dark text-4xl font-bold font-serif mb-6 leading-tight">Записатись <br className="hidden md:block" /> на прийом</h2>
               <p className="text-muted text-sm font-light mb-10 max-w-sm">
-                Залиште заявку, і я зателефоную вам протягом 15 хвилин для уточнення деталей та часу.
+                Залиште заявку та ми зателефонуємо вам протягом години для уточнення деталей та часу.
               </p>
               
               <div className="space-y-4">

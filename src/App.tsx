@@ -244,7 +244,7 @@ export default function App() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-serif font-bold text-5xl md:text-8xl text-white mb-8 leading-[1.05]"
             >
-              Нотаріальні послуги <br />
+              Нотаріус <br />
               <span className="italic font-normal opacity-90">в Одесі</span>
             </motion.h1>
 
